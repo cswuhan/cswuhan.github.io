@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>如何自学计算机？</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='如何自学计算机'><span>如何自学计算机？</span></h1><h2 id='计算机专业的自学路线图'><span>计算机专业的自学路线图</span></h2><ul><li><p><span>为什么要啃书？</span></p><p><span>这些基础知识就像武功内功，技术相当于外功。</span></p><p><span>可以训练自己的思维，提升自学能力。</span></p><p><span>破除35岁危机，避免成为青春饭的程序员。</span></p></li><li><p><span>业余时间可以自学计算机专业课程吗？</span></p><p><span>网络上书籍上的资源完全够用。</span></p></li><li><p><span>计算机专业学了些什么？</span></p><p><span>骨干核心课程一致：可以参考美国计算机科学体系报告。</span></p><p><span>核心内容：所有人必须掌握、拿学位的必须掌握</span></p><p><span>衡量计算机科学知识的掌握程度：了解（是什么）、会用（怎么做）、评估宇断绝（找到多种解决方案、选择一种最好的方式、为什么要这么做）。</span></p><h3 id='计算机自学路线图'><span>计算机自学路线图</span></h3><p><img src="C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231001003001357.png" referrerpolicy="no-referrer" alt="image-20231001003001357"></p><p><img src="C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231001003032141.png" referrerpolicy="no-referrer" alt="image-20231001003032141"></p></li></ul><h2 id='学习和认知的规律'><span>学习和认知的规律</span></h2><p><span>大脑的工作模式</span></p><p><span>	</span><span>工作记忆---------内存</span></p><p><span>	</span><span>长期记忆---------外部存储器</span></p><p><span>学习的过程</span></p><p><span>	</span><span>吸收的知识转换为组块，并将其移入长期记忆的过程</span></p><p><span>	</span><span>零碎的组块通过理解重组，建立成相互关联的组块，这个过程需要多次反复</span></p><p><span>学习需要适当休息与及时调整，让信息有条理且彼此之间联结紧密</span></p><p><span>培训班的问题就是，在短时间内向大脑灌入过多的知识，不给消化吸收的时间，神经元之间的连接难以形成和巩固</span></p><h3 id='基于组块的场景式学习方式'><span>基于组块的场景式学习方式</span></h3><p><span>对于特定的问题，主动学习特定的组块，然后应用组块解决问题。</span></p><p><span>（1) 针对具体的常见，搜集各站资源，构建知识框架。</span></p><p><span>		</span><span>比如要自己搭建一个网站，需要搜集，用哪些技术，这些技术用来解决哪些问题。数据使用SQL来存储，访问数据使用什么等等。</span></p><p><span>		</span><span>找到要用的，为什么用，搭建框架，即学习路线。后期再细化。</span></p><p><span>（2）学习，向知识框架中不断填充知识组块。</span></p><p><span>		</span><span>在知识框架中，一步一步学习，补充细节。</span></p><p><span>（3）图拼完了，意味着姚解决问题需要的知识组块以及全部就位，现在就可以着手解决实际问题了。</span></p><h3 id='有效学习的基本原则'><span>有效学习的基本原则</span></h3><ul><li><p><span>学习必须循序渐进，并且通常需要多次反复（构建知识之网）</span></p><p><span>需要看不懂的，先去去补充知识，补充完基础后回购头来学习。</span></p></li><li><p><span>学习需要高度可靠、及时反馈和一个进度条</span></p><p><span>学习要有目标，生成进度条，完成可以给奖励</span></p></li><li><p><span>学习需要明确目标，不同的目标导致不同的学习策略</span></p><p><span>应付考试，考纲就是框架</span></p><p><span>应付工作就不一样</span></p></li></ul><h3 id='学习要遵循人的认知规律'><span>学习要遵循人的认知规律</span></h3><ul><li><p><span>从感性到理性</span></p></li><li><p><span>从具体到抽象</span></p></li></ul><p><span>	</span><span>比如计算机网络，可以买几个路由器，抓包，看看自己玩游戏的数据发送过程</span></p><ul><li><p><span>理论必须在实践中才能真正学好</span></p><p><span>数学、编程需要动手去刷题</span></p></li></ul><h3 id='知识之网与课程'><span>“知识之网”与“课程”</span></h3><p><span>	</span><span>有效学习的成果是构成网络知识</span></p><ul><li><p><span>知识的“互联网”</span></p><p><span>孤立的知识是没用的，也容易忘记，需要建立知识之间的联系，构建知识网络</span></p><p><span>成网的知识，是一个“组块”，课作为一个整体构架出更大的“知识互联网”</span></p><p><span>学习的过程，是简历新知识与已有知识的连接</span></p></li><li><p><span>知识之王遍历（学习）方法</span></p><p><span>广度遍历，从已掌握的节点出发</span></p><p><span>深度遍历，从已掌握的节点出发，进行深度遍历，即一个一个知识点学到底，学深学透</span></p></li></ul><p><span>知识的底层和上层，是相对的，不同岗位（方向）所需要的底层知识是不同的</span></p><h2 id='读书那些事'><span>读书那些事</span></h2><ul><li><p><span>选择适合自己当前水平的书</span></p></li><li><p><span>选择已具备读懂前提的书</span></p></li></ul><p><span>		</span><span>读书需要考量自己的知识储备</span></p><p><span>		</span><span>被人眼里的好书，对你不一定能读懂</span></p><ul><li><p><span>阅读科普书籍入门、通过学习专业教材掌握基础、通过技术书籍深入特定领域</span></p></li><li><p><span>尽量选择最新的英文版，或者中英文对照，注意中英文术语对照表</span></p><p><span>英语和数学对学计算机是必须的</span></p></li><li><p><span>目的决定阅读方法</span></p><p><span>理解底层-----探究式阅读方法</span></p><p><span>应付考试</span></p></li></ul><h3 id='分类阅读法'><span>分类阅读法</span></h3><ul><li><p><span>科普读物</span></p><p><span>了解北京，明了术语和概念，建立全局观</span></p></li><li><p><span>计算机专业教材</span></p></li></ul><p><span>		</span><span>大号计算机科学理论基础，培养学习后劲</span></p><ul><li><p><span>21天/7天/零基础。。。。</span></p></li></ul><p><span>从时实践入手，引发兴趣，带入大门</span></p><ul><li><p><span>XXX框架/XXX开发</span></p></li></ul><p><span>系统介绍特点领域基础开发技巧，教你学会使用这个框架或者工具</span></p><ul><li><p><span>特定领域技术专著</span></p></li></ul><p><span>针对典型场景，总结开发经验，解决实际问题</span></p><p><span>针对特点领域，深入探究其中的规律与奥秘</span></p><ul><li><p><span>多遍阅读法</span></p><p><span>《计算机网络系统方法》   《计算机网络教材-自顶向下方法》</span></p><ul><li><p><span>预热</span></p><p><span>初步构建知识之网，确定阅读顺序（前言、序）和学习路线</span></p><p><span>可以选择多本同类型的书，构建详细的知识网络框架</span></p></li><li><p><span>第一遍</span></p><ul><li><p><span>仔细阅读第一章</span></p></li><li><p><span>快速浏览后面章节的开头和结尾，跳读中间</span></p></li></ul></li><li><p><span>第二遍</span></p><ul><li><p><span>挑出那些你最感兴趣的部分细度，看不懂的，可以先打个标记，跳过去</span></p></li></ul></li><li><p><span>第三遍</span></p><ul><li><p><span>看那些还没看过的内容</span></p></li></ul></li><li><p><span>第四遍以及更多</span></p><ul><li><p><span>重点攻克那些没有看懂的内容，比如去看两本科普的书籍，翻翻几篇papper</span></p></li><li><p><span>通读全文，回顾反思、进行巩固</span></p></li></ul></li></ul></li></ul><p><span>	</span><span>难书和厚书的典型</span></p><p><span>		</span><span>《机器学习西瓜书》、《离散数学教程》</span></p><p><span>	</span><span>解决方法：</span></p><ul><li><p><span>断点继传法：</span></p></li></ul><p><span>		</span><span>书看不懂时，不硬看，扫清障碍</span></p><p><span>		</span><span>先阅读相关的科普书籍，看看相关视频，了解相关知识背景，有了基础之后再回过头去看书</span></p><ul><li><p><span>对照阅读法</span></p><p><span>对找几本书，对照着看</span></p><p><span>比如，计算中网络、操作系统等的分层的概念、缓存的概念，对照着看，这种思维理解了之后，可以运用到自己的学习写作中</span></p></li><li><p><span>教学视频法</span></p><p><span>先看教学视频入门，再看书自学</span></p></li></ul><h2 id='特定计算机专业课程的学习'><span>特定计算机专业课程的学习</span></h2><ul><li><p><span>数学不好，就没法从事软件开发工作吗？</span></p><p><span>不一定，具备基本的数学能力是对所有计算机专业人员的基本要求，但是对于中高级的程序员，尤其是科研人员，数学必须要很扎实</span></p></li><li><p><span>有哪些数学分支是计算机专业所必学的？</span></p><p><span>高等数学、线性代数、离散数学、概率论与数理统计</span></p></li><li><p><span>教材选择</span></p><p><span>国内的就是不讲应用、解决思路，不适合自学</span></p><p><span>国外的相对而言更好，《普林斯顿微积分读本》、《离散数学及应用（黑书）》、《线性代数及应用（黄色书）》</span></p></li><li><p><span>学习技巧</span></p><p><span>遵循从易到难、从感性到理性、从具体到抽象的认知规律</span></p><p><span>先从科普、MOOC视频、导学入门，再学经典的教材</span></p><p><span>也可以使用EXCEL,MATLAB,R等软件将数据可视化促进数学学习</span></p></li><li><p><span>一门课，一门书，树立计算机系统全局观</span></p><p><span>要注意捉着视角，是怎样介绍计算机的</span></p><p><span>《计算机科学概论》 Nell Dale</span></p><p><span>《计算机科学概论》Glenn Brookshear</span></p><p><span>可以跳着读，读完之后可以看一些科普书籍</span></p></li><li><p><span>通过科普读物了解计算机科学</span></p></li></ul><p><span>	</span><span>《人工智能》《智能时代》</span></p><ul><li><p><span>著名的《深入理解计算机系统》</span></p></li></ul><p><span>		</span><span>需要一些基础，可以建立各种知识之间的联系，形成一个体系</span></p><ul><li><p><span>骨干课程</span></p><ul><li><p><span>数据结构与算法</span></p><p><span>先不看问题的解决方法，先自己思考。再去看书中的解决方案</span></p><p><span>合上书，自己去复现代码，用自己熟悉的语言实现算法</span></p><p><span>学习顺序：</span></p><p><span>学习算法前，一定要先学离散数学和编程语言</span></p><p><span>科普读物《算法图解》《算法基础》</span></p><p><span>通过《数据结构与算法》入门，打基础</span></p><p><span>经典书籍：《数据结构与算法 Java（C）语言描述(黑皮)》《算法第四版》《算法导论》</span></p><p><span>考研面试前，刷一下各公司各学校的真题就可以</span></p></li><li><p><span>计算机组成原理</span></p><p><span>首先需要数字电路基础</span></p><p><span>然后学习计算机组成与设计（计算机组成原理）</span></p><p><span>接着可以学习操作系统，编译原理</span></p><p><span>学习顺序：</span></p><p><span>《编码》、《计算机存储与外设（黑皮）》《计算机组成原理（黑皮）》、《计算机组成与设计-硬件接口》</span></p><p><span>《计算机体系结构-量化研究方法》</span></p></li><li><p><span>操作系统</span></p><p><span>需要数据结构与算法、计算机组成原理、编程语言的前提</span></p><p><span>学习方法：</span></p><p><span>和软件开发、动手实践结合</span></p><p><span>先学习操作系统的经典书籍，阅读一些专业书籍如《Linux内核》，《深入理解Windows》</span></p><p><span>使用C语言再Linux下编程操作，C编程完成教材作业</span></p><p><span>掌握Linux Shell编程，玩转Linux</span></p><p><span>使用JAVA/C#等开发网络或多线程应用程序，Socket编程，安卓手机的开发（进程线程）等等</span></p><p><span>使用工具完成在线试验</span></p></li><li><p><span>计算机网络</span></p><p><span>需要编程语言、数据结构与算法、操作系统的前提</span></p><p><span>先阅读科普读物，《网络是怎样连接的》</span></p><p><span>再看专业教材《计算机网络-自顶向下（从上往下）》《计算机网络-谢仁希版（从下往上）》《计算机网络-系统方法（横切）》</span></p><p><span>然后可以看特定领域的书籍</span></p><p><span>还可以接着开发网络应用，使用特定编程语言/平台的网络库</span></p><p><span>要点：</span></p><p><span>要搞明白三个问题：</span></p><p><span>计算机是如何连接的?数据是如何再计算机网络中传输的？网络软件系统应该如何构建？</span></p><p><span>着重理解分层架构，为什么分层，每个层的原理</span></p><p><span>动手编写网络程序，重点学习HTTP协议，一些Web开发的框架</span></p><p><span>学会使用Wireshark之类的工具抓包</span></p><p>&nbsp;</p></li></ul></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+</body>
+</html>
