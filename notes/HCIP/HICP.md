@@ -399,3 +399,59 @@ UNDO TERMINAL MONITOR
 创建组，多个接口同时配置
 
 `port-group group-member g0/0/1 g0/0/2 `
+
+通过PC1 ping PC2, 在交换机2上 G0/0/23和G0/0/24上抓包，可以发现当master激活时，slave是不会被启用的。
+
+## 单点故障解决方案之Moniter Link
+
+![image-20231002224257858](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231002224257858.png)
+
+![image-20231002224629884](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231002224629884.png)
+
+![image-20231002224913712](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231002224913712.png)
+
+![image-20231002224942208](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231002224942208.png)
+
+显示smart-link group
+
+`display smart-link group all`
+
+主动down掉端口：
+
+接入对应的接口，`shutdown`
+
+当主链路恢复时，转发路径自动转换到主链路上：
+
+`restore enable`
+
+`timer wtr 30` 30秒后切换
+
+## 单点故障解决方案之STP
+
+![image-20231003151802304](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003151802304.png)
+
+![image-20231003152050475](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152050475.png)
+
+![image-20231003152105798](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152105798.png)
+
+​	![image-20231003152145927](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152145927.png)
+
+![image-20231003152251717](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152251717.png)
+
+![image-20231003152401143](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152401143.png)
+
+![image-20231003152450979](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152450979.png)![image-20231003152545653](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003152545653.png)
+
+![image-20231003153110134](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153110134.png)
+
+![image-20231003153241476](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153241476.png)![image-20231003153438656](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153438656.png)
+
+![image-20231003153525323](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153525323.png)
+
+![image-20231003153559362](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153559362.png)![image-20231003153759617](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153759617.png)
+
+![image-20231003153902010](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003153902010.png)
+
+![image-20231003154017895](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154017895.png)![image-20231003154050419](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154050419.png)
+
+![image-20231003154226404](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154226404.png)![image-20231003154444454](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154444454.png)
