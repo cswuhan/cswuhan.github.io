@@ -16,3 +16,10 @@ I recently had a chat with my closest friend, who has been in the workforce for 
 
 To make matters worse, I just discovered that I'm in debt to the tune of ¥50,000. Repaying this sum will take a year, which may hinder my ability to prepare for the postgraduate entrance examination. All of these things combined have left me feeling overwhelmed.
 
+# 20231004
+
+I read an article named ‘2-Minute Rule to Become a Master at Coding — Atomic  Habits. “
+
+The article by Halim Shams discusses how to stay motivated when learning programming and highlights the key points from James Clear's book "Atomic Habits." It emphasizes that building small, consistent habits is the key to success in programming. The article mentions the Habit Loop (Cue, Craving, Response, Reward) and how it can be used to build good and bad habits. It also suggests using the 2-Minute Rule to start small and gradually increase your programming efforts to prevent frustration and make a long-term learning habit.
+
+I created a plan for a month and broke it down into weekly goals. This helped me to determine what to learn each day. To further organize my efforts, I also created a diary containing both weekly and monthly goals. This allowed me to stay on track with my program during each period.
