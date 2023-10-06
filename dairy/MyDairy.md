@@ -23,3 +23,9 @@ I read an article named ‘2-Minute Rule to Become a Master at Coding — Atomic
 The article by Halim Shams discusses how to stay motivated when learning programming and highlights the key points from James Clear's book "Atomic Habits." It emphasizes that building small, consistent habits is the key to success in programming. The article mentions the Habit Loop (Cue, Craving, Response, Reward) and how it can be used to build good and bad habits. It also suggests using the 2-Minute Rule to start small and gradually increase your programming efforts to prevent frustration and make a long-term learning habit.
 
 I created a plan for a month and broke it down into weekly goals. This helped me to determine what to learn each day. To further organize my efforts, I also created a diary containing both weekly and monthly goals. This allowed me to stay on track with my program during each period.
+
+# 20231006
+
+I find that you can learn everything if you spend enough time. I was afraid to learn something interesting as I thought it might not be easy. So, I quit whenever I had a problem and was interrupted by work or other tasks.
+
+I need to start by now. To build my learning habit, do it for 10 minutes. I will become a better learner and a better coder.

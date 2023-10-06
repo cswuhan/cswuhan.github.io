@@ -455,3 +455,73 @@ UNDO TERMINAL MONITOR
 ![image-20231003154017895](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154017895.png)![image-20231003154050419](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154050419.png)
 
 ![image-20231003154226404](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154226404.png)![image-20231003154444454](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231003154444454.png)
+
+![image-20231005104339135](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005104339135.png)
+
+![image-20231005104500297](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005104500297.png)
+
+![image-20231005104721072](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005104721072.png)
+
+![image-20231005104757094](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005104757094.png)![image-20231005104941560](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005104941560.png)![image-20231005105059603](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105059603.png)
+
+![image-20231005105144607](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105144607.png)![image-20231005105243728](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105243728.png)
+
+![image-20231005105310920](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105310920.png)
+
+![image-20231005105507313](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105507313.png)
+
+![image-20231005105603465](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105603465.png)
+
+![image-20231005105850318](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105850318.png
+
+![image-20231005105908888](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005105908888.png)
+
+![image-20231005110026101](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005110026101.png)
+
+![image-20231005110142748](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005110142748.png)
+
+![image-20231005110310688](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005110310688.png)
+
+![image-20231005110332715](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005110332715.png)
+
+![image-20231005110349166](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005110349166.png)
+
+![image-20231005110502830](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231005110502830.png)
+
+## STP升级技术之RSTP
+
+![image-20231006212234274](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006212234274.png)
+
+![image-20231006212508946](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006212508946.png)
+
+![image-20231006212735976](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006212735976.png)
+
+![image-20231006213013874](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006213013874.png)
+
+![image-20231006213117101](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006213117101.png)
+
+![image-20231006213148617](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006213148617.png)
+
+## RSTP升级技术之MSTP
+
+![image-20231006213454659](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006213454659.png)
+
+![image-20231006213620130](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006213620130.png)
+
+![image-20231006213929521](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006213929521.png)
+
+![image-20231006214103829](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006214103829.png)
+
+![image-20231006214300771](C:\Users\Wuhan\AppData\Roaming\Typora\typora-user-images\image-20231006214300771.png)
+
+设置完stp后需要设置优先级：
+
+instance 1 :
+
+SW1 stp instance 1 root primary
+
+SW1 stp instance 2 root secondary
+
+显示stp实例信息：
+
+dis stp instance 1 brief
