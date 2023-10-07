@@ -29,3 +29,13 @@ I created a plan for a month and broke it down into weekly goals. This helped me
 I find that you can learn everything if you spend enough time. I was afraid to learn something interesting as I thought it might not be easy. So, I quit whenever I had a problem and was interrupted by work or other tasks.
 
 I need to start by now. To build my learning habit, do it for 10 minutes. I will become a better learner and a better coder.
+
+# 20231007
+
+Tonight, I talked to a colleague in his 40s who has worked in his area for over twenty years. We discussed a lot, such as the military, economics, politics, life, and family.
+
+As for me, I learned a lot.
+
+Firstly, I need to figure out what to do next. To be a public servant? To be a preparation staff? To be a postgraduate? To be a developer? This is a big problem that may influence my life. I should spend time learning about each way as clearly as possible. To analyze each way's advantage and combine my family and my features.
+
+Secondly, I focus on my study plans and pay more attention to the news, such as various area situations, national politics, world economics, and the military. 
