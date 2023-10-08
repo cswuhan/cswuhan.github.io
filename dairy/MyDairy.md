@@ -39,3 +39,8 @@ As for me, I learned a lot.
 Firstly, I need to figure out what to do next. To be a public servant? To be a preparation staff? To be a postgraduate? To be a developer? This is a big problem that may influence my life. I should spend time learning about each way as clearly as possible. To analyze each way's advantage and combine my family and my features.
 
 Secondly, I focus on my study plans and pay more attention to the news, such as various area situations, national politics, world economics, and the military. 
+
+# 20231008
+
+Perhaps I should start learning to code now. As the article suggests, dedicating 5 hours a day to learning CSS, HTML, JS, and other aspects of web development would be beneficial. However, the job market has become increasingly challenging, to the point where even someone with a top Ph.D. may struggle to find their desired career after a year of searching.
+
