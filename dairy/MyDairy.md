@@ -22,7 +22,7 @@ I read an article named ‘2-Minute Rule to Become a Master at Coding — Atomic
 
 The article by Halim Shams discusses how to stay motivated when learning programming and highlights the key points from James Clear's book "Atomic Habits." It emphasizes that building small, consistent habits is the key to success in programming. The article mentions the Habit Loop (Cue, Craving, Response, Reward) and how it can be used to build good and bad habits. It also suggests using the 2-Minute Rule to start small and gradually increase your programming efforts to prevent frustration and make a long-term learning habit.
 
-I created a plan for a month and broke it down into weekly goals. This helped me to determine what to learn each day. To further organize my efforts, I also created a diary containing both weekly and monthly goals. This allowed me to stay on track with my program during each period.
+I created a month-long plan and broke it down into weekly goals. This helped me to determine what to learn each day. I also created a diary containing weekly and monthly plans to further organize my efforts. This allowed me to stay on track with my program during each period.
 
 # 20231006
 
@@ -42,5 +42,8 @@ Secondly, I focus on my study plans and pay more attention to the news, such as 
 
 # 20231008
 
-Perhaps I should start learning to code now. As the article suggests, dedicating 5 hours a day to learning CSS, HTML, JS, and other aspects of web development would be beneficial. However, the job market has become increasingly challenging, to the point where even someone with a top Ph.D. may struggle to find their desired career after a year of searching.
+Perhaps I should start learning to code now. As the article suggests, dedicating 5 hours daily to learning CSS, HTML, JS, and other aspects of web development would be beneficial. However, the job market has become increasingly challenging, where even someone with a top Ph.D. may struggle to find their desired career after a year of searching.
 
+# 20231009
+
+Lately, I've been losing track of myself by constantly playing games and avoiding work and studying. It's a shame because I know I should use my time more productively. I need to consciously limit the time I spend on games and change my daily routine. I plan to wake up early and go to bed early, ideally before 6:00 a.m., so I can shower and read English articles. Additionally, I need to stick to my study plans every day.
