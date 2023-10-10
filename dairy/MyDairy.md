@@ -47,3 +47,5 @@ Perhaps I should start learning to code now. As the article suggests, dedicating
 # 20231009
 
 Lately, I've been losing track of myself by constantly playing games and avoiding work and studying. It's a shame because I know I should use my time more productively. I need to consciously limit the time I spend on games and change my daily routine. I plan to wake up early and go to bed early, ideally before 6:00 a.m., so I can shower and read English articles. Additionally, I need to stick to my study plans every day.
+
+“There's no substitute for doing, no substitute for struggling through problems and finding solutions.” I should type the codes line by line and practice math to master it.

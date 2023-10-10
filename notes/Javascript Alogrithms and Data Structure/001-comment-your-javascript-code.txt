@@ -1,0 +1,5 @@
+//I am learning Javascript Alogrithms and Data Structure
+/*
+I am in the stydying room which cost me 300 for a month.
+I will use the most of my time to study.
+*/
