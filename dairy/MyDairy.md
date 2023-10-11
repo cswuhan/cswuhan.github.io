@@ -44,8 +44,13 @@ Secondly, I focus on my study plans and pay more attention to the news, such as 
 
 Perhaps I should start learning to code now. As the article suggests, dedicating 5 hours daily to learning CSS, HTML, JS, and other aspects of web development would be beneficial. However, the job market has become increasingly challenging, where even someone with a top Ph.D. may struggle to find their desired career after a year of searching.
 
-# 20231009
+# 20231010
 
 Lately, I've been losing track of myself by constantly playing games and avoiding work and studying. It's a shame because I know I should use my time more productively. I need to consciously limit the time I spend on games and change my daily routine. I plan to wake up early and go to bed early, ideally before 6:00 a.m., so I can shower and read English articles. Additionally, I need to stick to my study plans every day.
 
 “There's no substitute for doing, no substitute for struggling through problems and finding solutions.” I should type the codes line by line and practice math to master it.
+
+# 20231011
+
+It's important to take notes and write documentation, even if you're the only one who will ever read it. This practice will help you learn effectively and avoid having to learn things twice. If you're not sure how to get started with note-taking, there are many different techniques you can try. Some people prefer to use pen and paper, while others find that digital tools like note-taking apps work better for them. Regardless of the method you choose, the key is to find a system that works for you and stick with it. Over time, you'll find that taking good notes is an invaluable tool for learning and retaining information.
+
