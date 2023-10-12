@@ -54,3 +54,6 @@ Lately, I've been losing track of myself by constantly playing games and avoidin
 
 It's important to take notes and write documentation, even if you're the only one who will ever read it. This practice will help you learn effectively and avoid having to learn things twice. If you're not sure how to get started with note-taking, there are many different techniques you can try. Some people prefer to use pen and paper, while others find that digital tools like note-taking apps work better for them. Regardless of the method you choose, the key is to find a system that works for you and stick with it. Over time, you'll find that taking good notes is an invaluable tool for learning and retaining information.
 
+# 2023011
+
+I just find that I just find that cybernet is interesting, as I read a article aboutt phisher.
