@@ -54,3 +54,31 @@ git add file
 
 
 
+## 显示更加简洁的状态信息
+
+git status -s
+
+git status --short
+
+## 忽略文件
+
+新建名为gitignore文件，用简化的正则表达式写入规则，Github官网有示例
+
+## 查看已暂存和未暂存的变更
+
+git diff
+
+git diff -staged 查看哪些内容会进入下一次提交
+
+git diff --cashed 查看当前已暂存的变更
+
+git difftool 用工具查看
+
+## 提交变更
+
+git commit会打开编辑器显示
+
+git commit -v 差异化对比
+
+或者直接键入提交信息: git commit -m "message"
+
