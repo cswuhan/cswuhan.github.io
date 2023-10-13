@@ -82,3 +82,47 @@ git commit -v 差异化对比
 
 或者直接键入提交信息: git commit -m "message"
 
+## 跳过暂存区
+
+加入 -a
+
+git commit -a -m "message"
+
+## 移除文件
+
+从暂存区中移除
+
+git rm filename
+
+但是想把这个文件留在磁盘中，而不想让Git对其追踪
+
+git rm --cached filename
+
+## 移动文件
+
+git mv file_from file_to
+
+## 查看提交历史
+
+git log
+
+git log -p 显示每次提交的差异
+
+git log -n 显示最近的几次提交
+
+git log --stat 简要统计
+
+git log --pretty=oneline 单行显示提交
+
+git log --pretty=format:"%h - %an, %ar %ae %ad | %cn %ce %cd : %s"  格式显示提交
+
+an 作者名字，ar创建时间,ae 作者邮箱
+
+cn 提交者名字， ce 提交者邮箱, cd 提交日期, s 提交的主题
+
+
+
+
+
+
+
