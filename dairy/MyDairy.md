@@ -50,10 +50,14 @@ Lately, I've been losing track of myself by constantly playing games and avoidin
 
 “There's no substitute for doing, no substitute for struggling through problems and finding solutions.” I should type the codes line by line and practice math to master it.
 
-# 20231011
+# 20231012
 
 It's important to take notes and write documentation, even if you're the only one who will ever read it. This practice will help you learn effectively and avoid having to learn things twice. If you're not sure how to get started with note-taking, there are many different techniques you can try. Some people prefer to use pen and paper, while others find that digital tools like note-taking apps work better for them. Regardless of the method you choose, the key is to find a system that works for you and stick with it. Over time, you'll find that taking good notes is an invaluable tool for learning and retaining information.
 
-# 2023011
+# 20231013
 
 I just find that I just find that cybernet is interesting, as I read a article aboutt phisher.
+
+# 20231014
+
+It's meaningful to drink lukewarm tea in the morning and keep the phone away from the bed in night.
