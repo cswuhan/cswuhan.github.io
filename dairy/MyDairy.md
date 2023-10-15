@@ -61,3 +61,11 @@ I just find that I just find that cybernet is interesting, as I read a article a
 # 20231014
 
 It's meaningful to drink lukewarm tea in the morning and keep the phone away from the bed in night.
+
+# 20231015
+
+Now that I understand what a VPN is, it acts as a middleman between me and my destination IP. Its purpose is to encrypt my data before sending it and then decrypt it on the other end. 
+
+To explain further, I (A) want to send a message to B. The VPN will encrypt my data and use my IP address as the source IP and my destination as its destination. 
+
+Then, B sends the SYN/ACK to the VPN, which then decrypts the data and sends the SYN/ACK to me. This whole process ensures that my data is secure and protected.

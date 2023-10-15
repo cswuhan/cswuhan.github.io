@@ -150,7 +150,29 @@ git reset HEAD filename
 
 ### 撤销对文件的修改
 
+git checkout filename
 
+## 远程仓库的使用
 
+### 显示远程仓库
 
+git remote 
+
+gir remote -v 显示地址
+
+### 添加远程仓库
+
+git remote add [shortname] url
+
+### 从远程仓库获取和拉取数据
+
+git fetch [remote-name] 获取本地中没有的数据，但不会自动合并
+
+git pull  自动拉取数据并自动合并
+
+### 将数据推送到远程仓库
+
+git push [remoye-name] [branch-name]
+
+如果在推送前有其他人推送了数据，需要先拉取别人的变更，整合到自己的目录中，才能进行推送
 
