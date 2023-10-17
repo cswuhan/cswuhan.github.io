@@ -176,3 +176,73 @@ git push [remoye-name] [branch-name]
 
 如果在推送前有其他人推送了数据，需要先拉取别人的变更，整合到自己的目录中，才能进行推送
 
+### 检查远程仓库
+
+查看远程仓库的更多信息
+
+git remote show [remote-name]
+
+### 删除和重命名远程仓库
+
+重命名：
+
+git remote renama original_name updated_name
+
+删除：
+
+git remote rm [remote-name]
+
+## 标记
+
+标记为特定版本
+
+### 列举标签
+
+git tag
+
+### 创建标签
+
+分为轻量标签和注释标签
+
+轻量标签-指向某次提交的指针
+
+注释标签-作为完成的对象存储再Git数据库中，包含详细的信息
+
+### 注释标签
+
+创建注释标签:
+
+git tag -a [version] -m "mSessage"
+
+显示标签：
+
+git show [version]
+
+### 轻量标签
+
+创建轻量标签，不需要任何参数：
+
+git tag [version]
+
+### 补加标签
+
+在提交完成后还可补上标签：
+
+git tag -a [version] [提交的校验和]
+
+### 共享标签
+
+默认下，本地标签不会上传到远程服务器
+
+主动推送：
+git push [repo-name] [tagname]
+
+一次性推送:
+
+git push [repo-name] --tags
+
+### 检出标签
+
+在特定标签上创建分支：
+
+git checkout -b [branch-name] [tag-name]
