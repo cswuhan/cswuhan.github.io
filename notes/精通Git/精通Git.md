@@ -246,3 +246,43 @@ git push [repo-name] --tags
 在特定标签上创建分支：
 
 git checkout -b [branch-name] [tag-name]
+
+## Git别名
+
+git config --global alias.[your-command-name]  [original-name]
+
+例如，将git commit取别名
+
+git config --global alias.ci commit
+
+# Git分支机制
+
+## Git分支简述
+
+### 创建新分支
+
+git branch [branch-name]
+
+git branch first-table
+
+查看各分支指向的对象
+
+git log --oneline --decorate
+
+### 切换分支
+
+git checkout [branch-name]
+
+git checkout main
+
+HEAD指针会指向当前处于的分支
+
+当发生提交后，当前的提交快照会向前推进，并会指向上一次提交快照（父提交）
+
+查看分支历史
+
+git log --oneline --decorate --graph --all
+
+## 基本的分支与合并操作
+
+在项目中遇到了新的问题，可以创建新分支用于解决当前的问题，解决完后，合并分支，并回到初始分支
