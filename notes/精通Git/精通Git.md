@@ -286,3 +286,50 @@ git log --oneline --decorate --graph --all
 ## 基本的分支与合并操作
 
 在项目中遇到了新的问题，可以创建新分支用于解决当前的问题，解决完后，合并分支，并回到初始分支
+
+### 基本的分支操作
+
+当遇到新问题新任务时，新建分支并切换到这个分支上
+
+git checkout -b [new_branch-name]
+
+等效于：
+
+git branch [new_branch-name]
+
+git checkout [new_branch-name]
+
+当前问题解决完之后，回到主分支，合并这个解决问题的分支，并删除这个分支：
+
+git checkout master
+
+git merge [new_branch-name]
+
+git branch -d [new_branch-name]
+
+### 基本的合并操作
+
+当某个分支的工作已完成，就可以回到主分支，完成合并
+
+当两个要合并的分支不具有直接的祖先时候，会以最近的共同祖先为基础来进行合并，并产生“合并提交”
+
+git checkout master
+
+git merge iss_branch
+
+git branch -d iss_branch
+
+### 基本的合并冲突处理
+
+如果多个分支对同一文件进行了处理，在合并时就会产生冲突。
+
+此时可以通过
+
+git status
+
+来查看冲突源，并尝试修改存在冲突的文件
+
+或者使用图形化工具:
+
+git mergetool来处理
+
