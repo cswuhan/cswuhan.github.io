@@ -374,3 +374,74 @@ git branch --no-merged
 只要不与远程服务器通信，这个远程分支就不会改变
 
 如果有其他人对远程仓库进行了更改，就要git fetch [remote] 获取本地数据库所没有的数据
+
+### 推送
+
+与别人共享这个分支的成果时。可将本地分支推送到服务器上
+
+git push [remote] [branch]
+
+git push cswuhan master
+
+等价于：
+
+git push cswuhan master:master
+
+即把本地的分支推送到服务器上的master
+
+还可以更改名字
+
+git push cswuhan master:main
+
+别人向获取你的服务器上拉取更新时，就可以：
+
+git fetch cswuhan
+
+此时，他有一个指向你的分支的指针，但是并没有你的指针的内容
+
+可以把你的分支合并到他本地分支：
+
+git checkout -b other cswuhan/master
+
+### 跟踪分支
+
+在跟踪分支上，可以简化命令：
+
+git push
+
+git pull
+
+还可以更改当前分支所追踪的分支：
+
+git checkout --track [remote]/[branch]
+
+git branch -u [remote]/[branch]
+
+如果切换的分支未被创建，且与远程服务器端的分支同名，可以直接创建，会默认为你追踪：
+
+git checkout [branch]
+
+查看跟踪了哪些分支：
+
+git branch -vv
+
+## 拉取
+
+git fetch
+
+git merge
+
+先拉取，会让你选择合并
+
+但是git pull会自动更新本地服务器
+
+git fetch + git merge === git pull
+
+### 删除远程分支
+
+git push [remote] --delete [master]
+
+删除远程服务器的分支
+
+
+
