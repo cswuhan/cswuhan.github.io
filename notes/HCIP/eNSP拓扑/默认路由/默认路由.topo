@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="7DC0D75A-9511-480b-B249-A545FD4ABBFB" name="AR1" poe="0" model="AR2240" settings="" system_mac="00-E0-FC-D4-63-52" com_port="2000" bootmode="0" cx="93.000000" cy="263.000000" edit_left="120" edit_top="317">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="0270B471-5B82-4298-8F8C-DDC89CA355D9" name="AR2" poe="0" model="AR2240" settings="" system_mac="00-E0-FC-52-52-E1" com_port="2001" bootmode="0" cx="570.000000" cy="235.000000" edit_left="597" edit_top="289">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="7DC0D75A-9511-480b-B249-A545FD4ABBFB" destDeviceID="0270B471-5B82-4298-8F8C-DDC89CA355D9">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="163.109558" srcBoundRect_Y="287.469452" srcOffset_X="-7.000000" srcOffset_Y="-41.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="553.890442" tarBoundRect_Y="264.530548" tarOffset_X="-35.000000" tarOffset_Y="-57.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="74" top="211" right="153" bottom="228" content="企业路由器" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="574" top="194" right="669" bottom="211" content="运营商路由器" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="332" top="356" right="434" bottom="373" content="200.8.10.0/30" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="145" top="330" right="164" bottom="347" content=".1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="549" top="291" right="568" bottom="308" content=".2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

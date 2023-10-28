@@ -69,3 +69,7 @@ Now that I understand what a VPN is, it acts as a middleman between me and my de
 To explain further, I (A) want to send a message to B. The VPN will encrypt my data and use my IP address as the source IP and my destination as its destination. 
 
 Then, B sends the SYN/ACK to the VPN, which then decrypts the data and sends the SYN/ACK to me. This whole process ensures that my data is secure and protected.
+
+# 20231024
+
+There is no doubt that improving my communication skills is critical for me. As the article said, I should speak in public, for example, make some videos on YouTube.
